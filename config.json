@@ -1,0 +1,41 @@
+{
+    "options": {
+        "paths": {
+            "root": "/tileserver",
+            "fonts": "fonts",
+            "sprites": "sprites",
+            "styles": "styles",
+            "mbtiles": "mbtiles"
+        },
+        "domains": [
+            "127.0.0.1:8080"
+        ],
+        "formatQuality": {
+            "jpeg": 80,
+            "webp": 90
+        },
+        "maxScaleFactor": 3,
+        "maxSize": 2048,
+        "pbfAlias": "pbf",
+        "serveAllFonts": false,
+        "serveAllStyles": false,
+        "serveStaticMaps": true,
+        "tileMargin": 0
+    },
+    "styles": {
+        "basic": {
+            "style": "hybrid/style.json",
+            "tilejson": {
+                "type": "overlay"
+            }
+        }
+    },
+    "data": {
+        "iran-vector": {
+            "mbtiles": "iran-latest.mbtiles"
+        },
+        "iraq-vector": {
+            "mbtiles": "iraq-latest.mbtiles"
+        }
+    }
+}

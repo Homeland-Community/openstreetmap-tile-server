@@ -1,0 +1,17 @@
+version: '3.8'
+
+
+services:
+  tileserver:
+    image: klokantech/tileserver-gl
+    container_name: tileserver
+    volumes:
+      - ./mbtiles:/tileserver/mbtiles
+      - ./styles:/tileserver/styles
+      - ./fonts:/tileserver/fonts
+      - ./sprites:/tileserver/sprites
+      - ./config.json:/tileserver/config.json
+    command: tileserver-gl --config /tileserver/config.json
+    ports:
+      - 8080:80
+    
